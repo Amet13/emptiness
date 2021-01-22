@@ -16,7 +16,7 @@ p {
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Nov 12, 2021 00:00:00").getTime();
+var countDownDate = new Date("Nov 12, 2020 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -25,7 +25,7 @@ var x = setInterval(function() {
   var now = new Date().getTime();
     
   // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+  var distance = now - countDownDate;
     
   // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -47,14 +47,3 @@ var x = setInterval(function() {
 
 </body>
 </html>
-
-<!--
-todo: 
-- counter from start date
-- reverse counter
-- js/css
-- html validator
-- favicon
-- https://github.com/divshot/geo-bootstrap
-- README
--->
